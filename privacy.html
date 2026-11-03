@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nestra Privacy Policy</title>
+<meta name="description" content="Nestra works on your PC. No accounts, no telemetry, no analytics and no ads.">
+<link rel="icon" href="favicon.ico">
+<script>(function(){try{var t=localStorage.getItem('nestra-theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .doc{max-width:760px;margin:0 auto;padding:46px 24px 80px}
+  .doc h1{font-size:40px;letter-spacing:-.8px;margin-bottom:6px}
+  .doc .updated{color:var(--ink-mute);font-size:14px;margin-bottom:30px}
+  .doc h2{font-size:21px;margin:30px 0 10px;color:var(--ink)}
+  .doc h3{font-size:17px;margin:22px 0 8px;color:var(--ink)}
+  .doc p,.doc li{color:var(--ink-soft);font-size:15.5px;margin-bottom:10px}
+  .doc ul{padding-left:22px}
+  .doc ul ul{margin-top:8px}
+  .doc code{background:var(--card-hi);padding:2px 6px;border-radius:5px;font-size:13.5px}
+  .doc .pill{display:inline-block;background:rgba(84,201,138,.14);border:1px solid rgba(84,201,138,.3);
+    color:var(--ok);padding:6px 13px;border-radius:999px;font-size:13.5px;margin-bottom:24px}
+  .doc .tbl{overflow-x:auto;margin:6px 0 14px}
+  .doc table{border-collapse:collapse;width:100%;min-width:560px;font-size:14.5px}
+  .doc th,.doc td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--card-brd);color:var(--ink-soft)}
+  .doc th{color:var(--ink);font-weight:600}
+  .doc a:not(.btn){color:var(--link)}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<nav><div class="wrap"><a class="brand" href="index.html"><img src="nestra.png" alt="Nestra"> Nestra</a>
+  <div class="links"><a href="index.html">Home</a></div></div></nav>
+
+<main class="doc">
+  <h1>Privacy Policy</h1>
+  <div class="updated">Last updated 25 October 2026. Applies to Nestra 1.3.0 and later.</div>
+  <span class="pill">✓ No accounts, no telemetry, no analytics, no ads</span>
+
+  <p>Nestra is a shelf, clipboard history and screen capture tool
+  for Windows. This policy explains what Nestra touches on your PC, where it keeps it, and how
+  you control it.</p>
+
+  <p><b>The short version.</b> Nestra works on your PC. We never receive your
+  clipboard, your files, your captures or your recordings.</p>
+
+  <h2>1. What Nestra accesses and why</h2>
+  <div class="tbl"><table>
+    <tr><th>What</th><th>When</th><th>Why</th><th>Where it is kept</th></tr>
+    <tr><td><b>Clipboard contents</b> (text, links, images, files, colors)</td><td>Each time you copy, unless capture is paused or the app is excluded</td><td>To build your clipboard history and Recall search</td><td>On this PC, in Nestra's app data folder</td></tr>
+    <tr><td><b>The app you copied from</b> (its name and program path)</td><td>With each clip</td><td>To label the clip, show its icon and honor Excluded apps</td><td>With the clip, on this PC</td></tr>
+    <tr><td><b>Files, images, text and colors you add to the shelf</b></td><td>When you drag or paste them in</td><td>To keep a copy on the shelf</td><td>Nestra's app data folder</td></tr>
+    <tr><td><b>Your screen</b></td><td>Only when you start a screenshot, recording, text grab or color pick</td><td>To make that capture</td><td>Screenshots in Pictures\Nestra Screenshots, recordings in Videos\Nestra Recordings</td></tr>
+    <tr><td><b>Your microphone</b></td><td>While the record bar is open with the mic on, and while you record</td><td>To show a level meter, then add your voice to the recording</td><td>Inside the recording file. The level meter keeps no audio.</td></tr>
+    <tr><td><b>Text inside images</b> (OCR)</td><td>When you grab text, and in the background for images on the shelf and in clipboard history</td><td>To copy text and make images searchable</td><td>On this PC, with the item</td></tr>
+  </table></div>
+
+  <h3>Clipboard history</h3>
+  <ul>
+    <li>Clipboard history is stored only on this device, in Nestra's app data folder. It is never synced.</li>
+    <li>You control it in <b>Settings › Clipboard</b>.
+      <ul>
+        <li><b>Pause capture</b> stops recording new clips.</li>
+        <li><b>Excluded apps</b> never records copies made in the apps you choose.</li>
+        <li><b>History length</b> keeps the last 50, 100 or 500 clips. Older clips are deleted. Pinned clips are kept until you unpin or remove them.</li>
+        <li>You can remove any clip, and turn off <b>Show Clipboard in the shelf</b>.</li>
+      </ul>
+    </li>
+    <li>Copies that a password manager marks as private are always skipped. Nestra respects the standard Windows signals for this.</li>
+    <li>Text that looks like a password or API key is shown masked on screen until you hover it.</li>
+  </ul>
+
+  <h3>Screen, microphone and OCR</h3>
+  <ul>
+    <li>Nestra uses the screen only after you start a capture, and the microphone only while the record bar is open with the mic on. It does not watch your screen or listen in the background.</li>
+    <li>Text recognition uses Windows OCR, which runs on your PC.</li>
+    <li>Voice cleanup for recordings runs on your PC.</li>
+  </ul>
+
+  <h3>What Nestra does not do</h3>
+  <ul>
+    <li>It does not record keystrokes. While you draw on a recording, it watches for Delete, Backspace and V so you can edit the drawing. Nothing is stored.</li>
+    <li>It does not collect usage data, crash reports, device identifiers or advertising IDs.</li>
+    <li>It does not sell, share or send your information to us or anyone else.</li>
+  </ul>
+
+  <h2>2. Network use</h2>
+  <p>Nestra has no server and does not phone home. It makes one kind of network request, and only when you act.</p>
+  <ul>
+    <li><b>Web images.</b> When you drag or paste a web image or an image link onto the shelf, Nestra downloads the original image from the website that hosts it, so you keep a sharp copy. The request goes only to that website, which sees your IP address as it would for any visit. It names Nestra as the app and the website itself as the page you came from.</li>
+  </ul>
+  <p><b>Email us</b> in Settings opens your own email app. Nothing else in Nestra uses the internet.</p>
+
+  <h2>3. Diagnostics</h2>
+  <p>Nestra keeps small local log files in its app data folder to help fix problems. They never leave your PC on their own.</p>
+  <p><b>Settings › About Nestra › Export diagnostics</b> saves one diagnostics file to your Desktop and copies it, so you can paste it into a support email. It contains your Nestra version, Windows version, screen setup and recent technical log lines. It does <b>not</b> contain clipboard contents, file or folder names, or your Windows user name. Microphone names keep only their hardware words, such as “Headset AirPods”. It leaves your device only if you choose to send it to us.</p>
+
+  <h2>4. Storage and security</h2>
+  <p>All data stays on your PC under your Windows user account, protected by Windows' own account and file permissions. Nestra does not upload, back up or sync any of it.</p>
+
+  <h2>5. Deleting your data</h2>
+  <ul>
+    <li><b>A single clip or item.</b> Remove it in Nestra.</li>
+    <li><b>Old clips.</b> Lower the History length.</li>
+    <li><b>Everything.</b> Uninstall Nestra. The Microsoft Store version removes all of its app data, including clipboard history and shelf items. The direct-download version asks whether to remove them too.</li>
+    <li><b>Copies made for dragging into web apps</b> are temporary. Nestra removes them each time it quits or starts.</li>
+    <li><b>Screenshots and recordings</b> are saved as normal files in your Pictures and Videos folders. They stay after uninstall so you don't lose your work. Delete them there like any other file.</li>
+  </ul>
+
+  <h2>6. Children</h2>
+  <p>Nestra is a general productivity tool and is not directed at children. It collects no personal information from anyone.</p>
+
+  <h2>7. Changes</h2>
+  <p>If a new version of Nestra changes what it accesses or how, we will update this policy and the date at the top before that version is released.</p>
+
+  <h2>8. Contact</h2>
+  <p>Nestra<br>
+  Email <a href="mailto:support@thenestra.app">support@thenestra.app</a><br>
+  Web <a href="https://thenestra.app">thenestra.app</a></p>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Nestra</span>
+  <div class="links"><a href="index.html">Home</a> <a href="privacy.html">Privacy</a> <a href="source.html">Open source</a></div></div></footer>
+</body>
+</html>

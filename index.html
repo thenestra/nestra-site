@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nestra</title>
+<meta name="description" content="A glass shelf, clipboard history and screen capture for Windows. Everything stays on your PC.">
+<link rel="icon" href="favicon.ico">
+<script>(function(){try{var t=localStorage.getItem('nestra-theme');if(!t)t=matchMedia('(prefers-color-scheme: light)').matches?'light':'dark';document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .calm{min-height:calc(100vh - 62px - 120px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 0}
+  .calm .logo{width:104px;height:104px;border-radius:26px;box-shadow:var(--shadow);margin-bottom:30px}
+  .calm h1{font-size:clamp(44px,7vw,72px);line-height:1.04;letter-spacing:-1.6px;font-weight:740}
+  .calm .lead{margin:18px auto 30px;font-size:20px;color:var(--ink-soft);max-width:30ch}
+  .calm .tag{margin-bottom:22px}
+  .calm .ask{font-size:14.5px;color:var(--ink-mute)}
+  .calm .ask a{color:var(--link)}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="/"><img src="nestra.png" alt="Nestra"> Nestra</a>
+    <div class="links">
+      <button class="theme-toggle" aria-label="Toggle theme" title="Toggle light / dark">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main class="wrap calm">
+  <img class="logo reveal" src="nestra.png" alt="">
+  <div class="reveal">
+    <h1>Nestra</h1>
+    <p class="lead">A glass shelf, clipboard history and screen capture for Windows. Everything stays on your PC.</p>
+    <span class="tag">Coming soon to the Microsoft Store</span>
+    <p class="ask">Questions? <a href="mailto:support@thenestra.app">support@thenestra.app</a></p>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="/"><img src="nestra.png" alt="Nestra" style="width:22px;height:22px"> Nestra</a>
+    <div class="links">
+      <a href="privacy.html">Privacy</a>
+      <a href="source.html">Open source</a>
+      <a href="mailto:support@thenestra.app">Support</a>
+    </div>
+  </div>
+  <div class="wrap legal">Copyright © 2026 Nestra</div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
