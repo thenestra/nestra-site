@@ -1,0 +1,102 @@
+/* Nestra · thenestra.app · shared style for the inner pages (privacy, support, open source, 404).
+   Same tokens as the homepage: Apple-calm type, 28 px cards, light and dark. */
+:root{
+  --bg:#fff; --bg2:#f5f5f7; --ink:#1d1d1f; --ink2:#6e6e73; --ink3:#86868b; --line:rgba(0,0,0,.1);
+  --card:#fff; --blue:#0066cc; --pill:#0071e3; --nav:rgba(255,255,255,.8); --ok:#1d8a4f;
+  --font:"Segoe UI Variable Display","SF Pro Display","Segoe UI",system-ui,-apple-system,sans-serif;
+  --text:"Segoe UI Variable Text","SF Pro Text","Segoe UI",system-ui,-apple-system,sans-serif;
+  --ease:cubic-bezier(.22,1,.36,1);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#000; --bg2:#141416; --ink:#f5f5f7; --ink2:#a1a1a6; --ink3:#86868b; --line:rgba(255,255,255,.14);
+  --card:#1c1c1e; --blue:#2997ff; --nav:rgba(0,0,0,.72); --ok:#4cd28a;}}
+:root[data-theme="dark"]{
+  --bg:#000; --bg2:#141416; --ink:#f5f5f7; --ink2:#a1a1a6; --ink3:#86868b; --line:rgba(255,255,255,.14);
+  --card:#1c1c1e; --blue:#2997ff; --nav:rgba(0,0,0,.72); --ok:#4cd28a;}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--text);background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;line-height:1.5;font-size:17px}
+a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+img{display:block;max-width:100%}
+.wide{max-width:1200px;margin:0 auto;padding:0 22px}
+
+nav{position:sticky;top:0;z-index:50;height:52px;background:var(--nav);
+  backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--line)}
+nav .wide{height:100%;display:flex;align-items:center;gap:24px}
+.brand{display:flex;align-items:center;gap:9px;font-family:var(--font);font-size:21px;font-weight:600;color:var(--ink)}
+.brand:hover{text-decoration:none}
+.brand img{width:26px;height:26px}
+nav .links{margin-left:auto;display:flex;gap:24px;font-size:12px}
+nav .links a{color:var(--ink2)} nav .links a:hover{color:var(--ink);text-decoration:none}
+nav .links a.on{color:var(--ink)}
+.pill{display:inline-flex;align-items:center;justify-content:center;border-radius:980px;background:var(--pill);color:#fff;font-size:12px;padding:0 12px;height:28px}
+.pill:hover{text-decoration:none;background:#0077ed}
+.pill.big{font-size:17px;padding:0 22px;height:45px}
+
+/* document pages (privacy, open source) */
+.doc{max-width:760px;margin:0 auto;padding:72px 22px 120px}
+.doc .eyebrow{font-family:var(--font);font-size:17px;font-weight:600;color:var(--ink2)}
+.doc h1{font-family:var(--font);font-size:clamp(40px,6vw,56px);line-height:1.07;letter-spacing:-.012em;font-weight:600;margin-top:6px}
+.doc .updated{color:var(--ink3);font-size:14px;margin-top:14px}
+.doc .summary{background:var(--bg2);border-radius:22px;padding:26px 28px;margin:36px 0 8px}
+.doc .summary b{display:block;font-family:var(--font);font-size:21px;font-weight:600;margin-bottom:6px}
+.doc .summary p{margin:0;color:var(--ink2)}
+.doc .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.doc .chips span{font-size:13px;padding:6px 12px;border-radius:999px;background:var(--card);color:var(--ink)}
+.doc h2{font-family:var(--font);font-size:28px;line-height:1.15;letter-spacing:-.005em;font-weight:600;margin:52px 0 14px}
+.doc h3{font-family:var(--font);font-size:19px;font-weight:600;margin:30px 0 8px}
+.doc p,.doc li{color:var(--ink2);margin-bottom:12px}
+.doc p b,.doc li b{color:var(--ink);font-weight:600}
+.doc ul{padding-left:22px}
+.doc ul ul{margin-top:10px}
+.doc code{font-family:Consolas,"Cascadia Mono",monospace;font-size:14px;background:var(--bg2);padding:2px 6px;border-radius:6px;word-break:break-all}
+.doc .tbl{overflow-x:auto;margin:8px 0 14px;border-radius:16px;border:1px solid var(--line)}
+.doc table{border-collapse:collapse;width:100%;min-width:620px;font-size:15px}
+.doc th,.doc td{text-align:left;vertical-align:top;padding:14px 16px;border-bottom:1px solid var(--line);color:var(--ink2)}
+.doc tr:last-child td{border-bottom:0}
+.doc th{color:var(--ink);font-weight:600;background:var(--bg2)}
+.doc td b{color:var(--ink)}
+
+/* support / FAQ */
+.top{padding:80px 0 56px;text-align:center}
+.top h1{font-family:var(--font);font-size:clamp(44px,6.5vw,72px);line-height:1.05;letter-spacing:-.015em;font-weight:600}
+.top p{font-size:21px;color:var(--ink2);margin:16px auto 0;max-width:30em}
+.quick{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1040px;margin:0 auto;padding:0 22px}
+.quick a{background:var(--bg2);border-radius:22px;padding:26px;color:var(--ink)}
+.quick a:hover{text-decoration:none;background:var(--line)}
+.quick b{display:block;font-family:var(--font);font-size:19px;font-weight:600}
+.quick span{display:block;font-size:15px;color:var(--ink2);margin-top:6px}
+.faqwrap{max-width:820px;margin:0 auto;padding:72px 22px 40px}
+.faqwrap h2{font-family:var(--font);font-size:32px;font-weight:600;letter-spacing:-.01em;margin:56px 0 8px}
+.faqwrap h2:first-child{margin-top:0}
+.faq{border-top:1px solid var(--line)}
+.faq details{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 40px 22px 0;font-family:var(--font);font-size:19px;font-weight:600;position:relative}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";position:absolute;right:6px;top:16px;font-size:26px;font-weight:300;color:var(--ink2);transition:transform .3s var(--ease)}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .a{padding:0 40px 22px 0;color:var(--ink2)}
+.faq .a p{margin-bottom:10px} .faq .a b{color:var(--ink);font-weight:600}
+.keys{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin:6px 0 8px}
+kbd{font-family:var(--text);font-size:13px;padding:3px 8px;border-radius:7px;border:1px solid var(--line);background:var(--bg2);color:var(--ink);white-space:nowrap}
+.contact{max-width:820px;margin:0 auto 120px;padding:0 22px}
+.contact .box{background:var(--bg2);border-radius:28px;padding:44px;text-align:center}
+.contact h2{font-family:var(--font);font-size:32px;font-weight:600}
+.contact p{color:var(--ink2);margin:10px auto 22px;max-width:32em}
+
+/* 404 */
+.lost{min-height:calc(100vh - 52px - 90px);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 22px}
+.lost img{width:72px;height:72px;margin-bottom:22px}
+.lost h1{font-family:var(--font);font-size:clamp(40px,6vw,56px);font-weight:600;letter-spacing:-.012em}
+.lost p{font-size:19px;color:var(--ink2);margin:12px 0 28px}
+
+footer{border-top:1px solid var(--line);padding:24px 0 40px;font-size:12px;color:var(--ink3)}
+footer .wide{display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+footer .links{margin-left:auto;display:flex;gap:20px}
+footer a{color:var(--ink3)} footer a:hover{color:var(--ink);text-decoration:none}
+
+@media (max-width:760px){
+  nav .links{display:none}
+  .quick{grid-template-columns:1fr}
+  .contact .box{padding:30px 22px}
+}
