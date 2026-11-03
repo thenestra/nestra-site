@@ -401,6 +401,27 @@ footer a:hover{color:var(--ink)}
   #recscene{height:380vh}
   .rec .wavecard{left:52%;top:20%;width:45%}
 }
+
+
+.cap4{display:none}
+@media (max-width:900px){
+  .hero4 h1{font-size:30px;line-height:1.12;padding:0 24px;text-wrap:balance;max-width:420px}
+  .hero4 .float{display:block}
+  .hero4 .f-preview{left:-3%;top:-16%;width:19%}
+  .hero4 .f-tools{right:-3%;top:-14%;width:16%}
+  .hero4 .f-recall{left:-4%;top:64%;width:50%}
+  .hero4 .f-recbar{right:-4%;top:90%;width:50%}
+  .hero4 .rig{margin:40px 0 34px}
+  .scene4{overflow-x:clip}
+  .scene4 .pin{flex-direction:column;gap:20px}
+  .frame4.zm{width:calc(92vw * var(--z));max-width:none;box-shadow:none;border-radius:0;
+    transform:translateX(calc(92vw * (var(--z) - 1) * (.5 - var(--fx))));
+    clip-path:inset(0 calc(92vw * (var(--z) - 1) * (1 - var(--fx))) 0 calc(92vw * (var(--z) - 1) * var(--fx)) round 18px)}
+  .cap4{display:block;position:relative;width:86vw;min-height:3em;text-align:center;font-size:17px;line-height:1.4;font-weight:600;color:var(--ink)}
+  .cap4 span{position:absolute;left:0;right:0;top:0;opacity:0;transform:translateY(6px);transition:opacity .35s var(--ease),transform .35s var(--ease)}
+  .cap4 span.on{opacity:1;transform:none}
+  .rec .wavecard{left:30%;top:14%;width:30%}
+}
 </style>
 </head>
 <body>
@@ -459,11 +480,11 @@ footer a:hover{color:var(--ink)}
     <h2 class="h2 rise">Copy now.<br>Find it later.</h2>
     <p class="lead rise">Nestra keeps a private history of what you copy. Press <b>Ctrl+Shift+Space</b>, type a few letters, and press Enter to paste straight into the app you were in.</p>
   </div>
-  <div class="scene4" id="rscene"><div class="pin"><div class="frame4">
+  <div class="scene4" id="rscene"><div class="pin"><div style="--z:2.0;--fx:0.5" class="zm frame4">
     <img decoding="async" loading="lazy" class="base" src="web4/notes.jpg" alt="Recall over a trip plan: typing belem finds the pinned café address, Enter pastes it into the notes">
     <span class="ins"><span class="txt">Pastéis de Belém, Rua de Belém 84-92</span><i class="caret"></i></span>
     <div class="rwin light-only"><div class="glass"></div><img decoding="async" loading="lazy" src="web4/rt0-light.png" alt="" data-ar="1.17647"><img decoding="async" loading="lazy" src="web4/rt1-light.png" alt="" data-ar="1.07595"><img decoding="async" loading="lazy" src="web4/rt2-light.png" alt="" data-ar="1.17647"><img decoding="async" loading="lazy" src="web4/rt3-light.png" alt="" data-ar="2.44604"><img decoding="async" loading="lazy" src="web4/rt4-light.png" alt="" data-ar="3.50515"><img decoding="async" loading="lazy" src="web4/rt5-light.png" alt="" data-ar="3.50515"></div><div class="rwin dark-only"><div class="glass"></div><img decoding="async" loading="lazy" src="web4/rt0-dark.png" alt="" data-ar="1.17647"><img decoding="async" loading="lazy" src="web4/rt1-dark.png" alt="" data-ar="1.07595"><img decoding="async" loading="lazy" src="web4/rt2-dark.png" alt="" data-ar="1.17647"><img decoding="async" loading="lazy" src="web4/rt3-dark.png" alt="" data-ar="2.44604"><img decoding="async" loading="lazy" src="web4/rt4-dark.png" alt="" data-ar="3.50515"><img decoding="async" loading="lazy" src="web4/rt5-dark.png" alt="" data-ar="3.50515"></div>
-  </div></div></div>
+  </div><p class="cap4"><span data-a="0" data-b="0.2">Press Ctrl+Shift+Space to open Recall.</span><span data-a="0.2" data-b="0.6">Type a few letters. The results narrow as you type.</span><span data-a="0.6" data-b="1.01">Press Enter. It pastes into the app you were in.</span></p></div></div>
   <div class="wide cards4 after">
     <div class="card4 rise"><div class="pic"><div class="found"><img decoding="async" loading="lazy" class="ph" src="web4/found-photo.jpg" alt="A Lisbon tram with ESTRELA 25 on its sign"><div class="fwin"><div class="glass"></div><img decoding="async" loading="lazy" src="web4/rf-dark.png" alt="Recall finding the photo by searching estrela"></div></div></div>
       <p><b>Finds words in pictures.</b> Photos and screenshots are read on your PC, so "estrela" finds the tram with it on its sign.</p></div>
@@ -483,7 +504,7 @@ footer a:hover{color:var(--ink)}
     <h2 class="h2 rise">Show, don't type.</h2>
     <p class="lead rise">Capture a region or a window, then add arrows, numbered steps, a highlight, a label, blur or a spotlight. Copy it, save it, or keep it on the shelf.</p>
   </div>
-  <div class="scene4" id="cscene"><div class="pin"><div class="frame4 esf light-only" style="aspect-ratio:2440/1432"><img decoding="async" loading="lazy" class="base" src="web4/es-light.jpg" alt=""><img decoding="async" loading="lazy" class="shp" data-k="0" src="web4/es-light-1.png" alt="" style="left:55.369%;top:38.757%;width:3.033%"><img decoding="async" loading="lazy" class="shp" data-k="1" src="web4/es-light-2.png" alt="" style="left:58.238%;top:58.310%;width:6.311%"><img decoding="async" loading="lazy" class="shp" data-k="2" src="web4/es-light-3.png" alt="" style="left:75.246%;top:58.520%;width:14.098%"><img decoding="async" loading="lazy" class="shp" data-k="3" src="web4/es-light-4.png" alt="" style="left:89.467%;top:67.249%;width:3.115%"><img decoding="async" loading="lazy" class="shp" data-k="4" src="web4/es-light-5.png" alt="" style="left:58.320%;top:81.355%;width:11.475%"></div><div class="frame4 esf dark-only" style="aspect-ratio:2440/1432"><img decoding="async" loading="lazy" class="base" src="web4/es-dark.jpg" alt=""><img decoding="async" loading="lazy" class="shp" data-k="0" src="web4/es-dark-1.png" alt="" style="left:55.369%;top:38.757%;width:3.033%"><img decoding="async" loading="lazy" class="shp" data-k="1" src="web4/es-dark-2.png" alt="" style="left:58.238%;top:58.310%;width:6.311%"><img decoding="async" loading="lazy" class="shp" data-k="2" src="web4/es-dark-3.png" alt="" style="left:75.246%;top:58.520%;width:14.098%"><img decoding="async" loading="lazy" class="shp" data-k="3" src="web4/es-dark-4.png" alt="" style="left:89.467%;top:67.249%;width:3.115%"><img decoding="async" loading="lazy" class="shp" data-k="4" src="web4/es-dark-5.png" alt="" style="left:58.320%;top:81.355%;width:11.475%"></div></div></div>
+  <div class="scene4" id="cscene"><div class="pin"><div class="zm frame4 esf light-only" style="--z:1.9;--fx:1;aspect-ratio:2440/1432"><img decoding="async" loading="lazy" class="base" src="web4/es-light.jpg" alt=""><img decoding="async" loading="lazy" class="shp" data-k="0" src="web4/es-light-1.png" alt="" style="left:55.369%;top:38.757%;width:3.033%"><img decoding="async" loading="lazy" class="shp" data-k="1" src="web4/es-light-2.png" alt="" style="left:58.238%;top:58.310%;width:6.311%"><img decoding="async" loading="lazy" class="shp" data-k="2" src="web4/es-light-3.png" alt="" style="left:75.246%;top:58.520%;width:14.098%"><img decoding="async" loading="lazy" class="shp" data-k="3" src="web4/es-light-4.png" alt="" style="left:89.467%;top:67.249%;width:3.115%"><img decoding="async" loading="lazy" class="shp" data-k="4" src="web4/es-light-5.png" alt="" style="left:58.320%;top:81.355%;width:11.475%"></div><div class="zm frame4 esf dark-only" style="--z:1.9;--fx:1;aspect-ratio:2440/1432"><img decoding="async" loading="lazy" class="base" src="web4/es-dark.jpg" alt=""><img decoding="async" loading="lazy" class="shp" data-k="0" src="web4/es-dark-1.png" alt="" style="left:55.369%;top:38.757%;width:3.033%"><img decoding="async" loading="lazy" class="shp" data-k="1" src="web4/es-dark-2.png" alt="" style="left:58.238%;top:58.310%;width:6.311%"><img decoding="async" loading="lazy" class="shp" data-k="2" src="web4/es-dark-3.png" alt="" style="left:75.246%;top:58.520%;width:14.098%"><img decoding="async" loading="lazy" class="shp" data-k="3" src="web4/es-dark-4.png" alt="" style="left:89.467%;top:67.249%;width:3.115%"><img decoding="async" loading="lazy" class="shp" data-k="4" src="web4/es-dark-5.png" alt="" style="left:58.320%;top:81.355%;width:11.475%"></div><p class="cap4"><span data-a="0" data-b="0.22">Capture a region, then mark it up.</span><span data-a="0.22" data-b="0.62">Highlight what matters and point at it.</span><span data-a="0.62" data-b="1.01">Number the steps. Add a label.</span></p></div></div>
 </section>
 
 <!-- 6 · text grab -->
@@ -493,12 +514,12 @@ footer a:hover{color:var(--ink)}
     <h2 class="h2 rise">Copy the text off anything.</h2>
     <p class="lead rise">Press <b>Ctrl+Alt+T</b> and drag over any words on screen, even a paused video. They are read on your PC and copied, ready to paste.</p>
   </div>
-  <div class="scene4" id="gscene"><div class="pin"><div class="frame4 grab" style="aspect-ratio:2000/1312">
+  <div class="scene4" id="gscene"><div class="pin"><div class="zm frame4 grab" style="--z:1.9;--fx:0.5;aspect-ratio:2000/1312">
     <img decoding="async" loading="lazy" class="dim" src="web4/grab-dim.jpg" alt="Text selected on a paused keynote video and copied">
     <img decoding="async" loading="lazy" class="bright" src="web4/grab-bright.jpg" alt="">
     <div class="sel"><span class="size">0 × 0</span></div>
     <img decoding="async" loading="lazy" class="cpill light-only" src="web4/copied-light.png" alt=""><img decoding="async" loading="lazy" class="cpill dark-only" src="web4/copied-dark.png" alt="">
-  </div></div></div>
+  </div><p class="cap4"><span data-a="0" data-b="0.6">Press Ctrl+Alt+T and drag over any words.</span><span data-a="0.6" data-b="1.01">They are read on your PC and copied.</span></p></div></div>
 </section>
 
 <!-- 7 · record -->
@@ -508,7 +529,7 @@ footer a:hover{color:var(--ink)}
     <h2 class="h2 rise">Say it once.</h2>
     <p class="lead rise">Press <b>Ctrl+Alt+R</b>, drag over what to show, and talk. Circle what matters, pause when you need to. Then trim it, and let <b>Clean voice</b> take out the background noise. MP4 with your voice, or a silent GIF.</p>
   </div>
-  <div class="scene4" id="recscene"><div class="pin"><div class="frame4 rec">
+  <div class="scene4" id="recscene"><div class="pin"><div style="--z:1.55;--fx:0.12" class="zm frame4 rec">
     <img decoding="async" loading="lazy" class="base" src="web4/map-bright.jpg" alt="Recording the Tram 28 route map: pick the region, record, circle Santa Luzia, pause">
     <img decoding="async" loading="lazy" class="base mdim" src="web4/map-dim.jpg" alt="">
     <img decoding="async" loading="lazy" class="base mbright" src="web4/map-bright.jpg" alt="">
@@ -526,7 +547,7 @@ footer a:hover{color:var(--ink)}
       <div class="wave"><i style="--v:0;--n:0.178"></i><i style="--v:0;--n:0.147"></i><i style="--v:0;--n:0.237"></i><i style="--v:0;--n:0.133"></i><i style="--v:0;--n:0.216"></i><i style="--v:0;--n:0.186"></i><i style="--v:0.388;--n:0.211"></i><i style="--v:0.374;--n:0.198"></i><i style="--v:0.395;--n:0.136"></i><i style="--v:0.626;--n:0.269"></i><i style="--v:0.43;--n:0.16"></i><i style="--v:0.758;--n:0.291"></i><i style="--v:0.725;--n:0.191"></i><i style="--v:0.985;--n:0.128"></i><i style="--v:0.908;--n:0.172"></i><i style="--v:0.444;--n:0.141"></i><i style="--v:0;--n:0.176"></i><i style="--v:0;--n:0.267"></i><i style="--v:0;--n:0.153"></i><i style="--v:0;--n:0.225"></i><i style="--v:0.765;--n:0.187"></i><i style="--v:0.706;--n:0.131"></i><i style="--v:0.389;--n:0.157"></i><i style="--v:0.792;--n:0.197"></i><i style="--v:0.554;--n:0.225"></i><i style="--v:0.645;--n:0.174"></i><i style="--v:0.866;--n:0.246"></i><i style="--v:0.509;--n:0.223"></i><i style="--v:0.691;--n:0.278"></i><i style="--v:0.824;--n:0.172"></i><i style="--v:0.987;--n:0.141"></i><i style="--v:0;--n:0.195"></i><i style="--v:0;--n:0.256"></i><i style="--v:0;--n:0.147"></i><i style="--v:0;--n:0.208"></i><i style="--v:0;--n:0.127"></i><i style="--v:0.784;--n:0.258"></i><i style="--v:0.722;--n:0.278"></i><i style="--v:0.554;--n:0.245"></i><i style="--v:0.736;--n:0.224"></i><i style="--v:0.647;--n:0.271"></i><i style="--v:0.964;--n:0.205"></i><i style="--v:0.782;--n:0.131"></i><i style="--v:0.806;--n:0.236"></i><i style="--v:0.996;--n:0.268"></i><i style="--v:0.535;--n:0.189"></i><i style="--v:0.785;--n:0.124"></i><i style="--v:0.65;--n:0.15"></i><i style="--v:0.426;--n:0.131"></i><i style="--v:0;--n:0.258"></i><i style="--v:0;--n:0.143"></i><i style="--v:0;--n:0.165"></i><i style="--v:0;--n:0.19"></i><i style="--v:0;--n:0.277"></i><i style="--v:0;--n:0.135"></i><i style="--v:0;--n:0.201"></i></div>
       <p>Hum, fans and keyboard clatter fade out. Your voice stays.</p>
     </div>
-  </div></div></div>
+  </div><p class="cap4"><span data-a="0" data-b="0.14">Press Ctrl+Alt+R and pick what to show.</span><span data-a="0.14" data-b="0.38">Talk, and circle what matters.</span><span data-a="0.38" data-b="0.44">Pause when you need a breath.</span><span data-a="0.44" data-b="0.72">Stop, then trim it in the editor.</span><span data-a="0.72" data-b="1.01">Clean voice takes out the background noise.</span></p></div></div>
 </section>
 
 <!-- 8 · colour -->
@@ -612,7 +633,8 @@ footer a:hover{color:var(--ink)}
   var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); }, {threshold:.12});
   $$('.rise').forEach(function(el){ io.observe(el); });
   var scenes = [], vh = innerHeight, sy = scrollY, raf = 0, lastT = 0;
-  function scene(el, opt){ var s = {el: el, pin: opt.pin !== false, update: opt.update, measure: opt.measure, p: -1, t: 0, top: 0, h: 0}; scenes.push(s); return s; }
+  function scene(el, opt){ var s = {el: el, pin: opt.pin !== false, update: opt.update, measure: opt.measure, p: -1, t: 0, top: 0, h: 0,
+    caps: $$('.cap4 span', el).map(function(c){ return {el: c, a: +c.dataset.a, b: +c.dataset.b}; })}; scenes.push(s); return s; }
   function measure(){
     vh = innerHeight; sy = scrollY;
     scenes.forEach(function(s){ var r = s.el.getBoundingClientRect(); s.top = r.top + sy; s.h = s.el.offsetHeight; if (s.measure) s.measure(); });
@@ -633,7 +655,7 @@ footer a:hover{color:var(--ink)}
       s.t = target(s);
       var p = s.p < 0 ? s.t : s.p + (s.t - s.p) * k;
       if (Math.abs(s.t - p) < .0004) p = s.t; else moving = true;
-      if (p !== s.p){ s.p = p; s.update(p); }
+      if (p !== s.p){ s.p = p; s.update(p); s.caps.forEach(function(c){ c.el.classList.toggle('on', p >= c.a && p < c.b); }); }
     });
     if (moving) kick(); else lastT = 0;
   }
